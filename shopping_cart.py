@@ -20,6 +20,6 @@ class ShoppingCart:
         return self.items
 
     def get_total_price(self, price_map):
-        return sum([price_map.get(item) for item in self.items])
+        return sum([price_map.get(item) for item in self.items]) + 1
 
 
